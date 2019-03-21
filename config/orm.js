@@ -12,10 +12,6 @@
 const connection = require("../config/connection.js");
 
 
-// Cats has helper functions for ?, ?, ? 
-// obj:key pairs to sql 
-// Necessary?
-
 // create a ORM
 const orm = {
     selectAll: function(table, callback){
