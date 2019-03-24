@@ -1,6 +1,9 @@
 // All good here
 
 const mysql = require("mysql");
+var dotenv = require("dotenv");
+
+
 
 // set up the connections
 var connection;
