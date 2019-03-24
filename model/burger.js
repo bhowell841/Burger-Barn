@@ -1,22 +1,22 @@
 // import orm
-const orm = require("../config/orm.js");
+var orm = require("../config/orm.js");
 
 // create the code that will call the ORM functions
 var burger = {
-    all: function(callback) {
-        orm.all("burgers", function(res) {
+    selectAll: function(callback) {
+        orm.selectAll("burgers", function(res) {
             callback(res);
         });
     },
 
-    create: function(cols, vals, callback) {
-        orm.create("burgers", cols, vals, function(res) {
+    insertOne: function(name, callback) {
+        orm.insertOne("burgers", "burger_name", name, function(res) {
             callback(res);
         });
     },
 
-    update: function(cols, vals, id, callback) {
-        orm.update("burgers", col, vals, id, function(res) {
+    updateOne: function(updateID, callback) {
+        orm.updateOne("burgers", "devoured", true, updateID, function(res) {
             callback(res)
         });
     }
@@ -24,9 +24,3 @@ var burger = {
 
 
 module.exports = burger;
-
-
-
-
-
-// export the burger.js

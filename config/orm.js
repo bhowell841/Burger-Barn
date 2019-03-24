@@ -1,37 +1,29 @@
-// import the connection
-
-// methods for necessary MySql commands
-// selectAll()
-// insertOne()
-// updateOne()
-
-// export the orm
-
 
 // Import the MySql connection 
 const connection = require("../config/connection.js");
 
 
 // create a ORM
-const orm = {
+var orm = {
     selectAll: function(table, callback){
         let queryString = "SELECT * FROM " + table;
-        
+        console.log(queryString);
         connection.query(queryString, function(err, results){
             if(err) {
                 throw err;
             }
             callback(results);
-        })
+        });
     },
 
 
 
     insertOne: function(table, cols, vals, callback){
-        let queryString = "INSERT INTO " + table + "(" + column + ") VALUES (?);";
+        let queryString = "INSERT INTO " + table + " (" + cols + ") VALUES ('" + vals + "');";
+        
         console.log(queryString);
 
-        connection.query(queryString, function(err, results) {
+        connection.query(queryString, vals, function(err, results) {
             if (err) {
                 throw err;
             }
@@ -39,16 +31,18 @@ const orm = {
         });
     },
 
-    updateOne: function(table, col, colValue, condition, conditionValue, callback){
-        let queryString = 'UPDATE ' + table + ' SET ' + col + '=?' + 'WHERE ' + condition + '=?';
-
-        connection.query(queryString,[conditionValue], function(err, results){
+    updateOne: function(table, cols, vals, match, callback){
+        let queryString = 'UPDATE ' + table + ' SET ' + cols + " = " + vals + " where id = " + match;
+ 
+        console.log(queryString);
+        
+        connection.query(queryString, vals, function(err, results){
             if (err) {
                 throw err;
             }
             callback(results)
         });
-    }
+    },  
 
 }
 

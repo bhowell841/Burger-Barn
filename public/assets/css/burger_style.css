@@ -1,0 +1,47 @@
+
+body {
+    background-image:url("https://previews.123rf.com/images/1atelier/1atelier1611/1atelier161100025/68182425-seamless-vector-pattern-with-burger-image-cheeseburger-blue-background-image-of-burger-burger-icon-s.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+img{
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 10%;
+}
+
+#submit {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5%;
+    border: solid black 1px;
+}
+
+#enter-burger{
+    border: solid black 1px;
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: #ADDFFF;
+}
+
+#devoured-burger{
+    border: solid black 1px;
+    margin: 5px;
+    margin-bottom: 15px;
+    background-color: #ADDFFF;
+}
+
+.buttonHolder{ 
+    text-align: center; 
+    margin-top: 5px;
+}
