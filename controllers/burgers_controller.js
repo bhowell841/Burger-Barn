@@ -28,7 +28,7 @@ router.get("/", function (req, res) {
             if (result.changedRows === 0) {
                 return res.status(404).end();
         }
-            return    res.status(200).end();
+            return res.status(200).end();
         });
     });
 

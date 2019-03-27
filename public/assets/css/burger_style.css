@@ -1,6 +1,7 @@
 
 body {
-    background-image:url("https://previews.123rf.com/images/1atelier/1atelier1611/1atelier161100025/68182425-seamless-vector-pattern-with-burger-image-cheeseburger-blue-background-image-of-burger-burger-icon-s.jpg");
+    background-image: url("http://www.themesltd.com/headers2/baby_burgers.png");
+    /* background-image: url("https://previews.123rf.com/images/1atelier/1atelier1611/1atelier161100025/68182425-seamless-vector-pattern-with-burger-image-cheeseburger-blue-background-image-of-burger-burger-icon-s.jpg"); */
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -8,6 +9,9 @@ body {
 
 h1 {
     text-align: center;
+    padding: 10px;
+    border: solid black 1px;
+    background-color: #ADDFFF;
 }
 
 
