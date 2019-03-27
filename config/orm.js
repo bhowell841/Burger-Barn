@@ -31,8 +31,8 @@ var orm = {
         });
     },
 
-    updateOne: function(table, cols, vals, match, callback){
-        let queryString = 'UPDATE ' + table + ' SET ' + cols + " = " + vals + " where id = " + match;
+    updateOne: function(table, cols, vals, equal, callback){
+        let queryString = 'UPDATE ' + table + ' SET ' + cols + " = " + vals + " where id = " + equal;
  
         console.log(queryString);
         
