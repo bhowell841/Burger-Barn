@@ -1,4 +1,4 @@
-# burger-barn
+# Burger-Barn
 Burger Barn a burger logging application that follows the MVC pattern.  This applications allows the user to create new burgers to add to a list, and then devour them.
 
 ### **Technology Used**
